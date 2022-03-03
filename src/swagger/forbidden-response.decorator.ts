@@ -4,7 +4,6 @@ import {
   ApiOperation,
   ApiResponseOptions,
 } from '@nestjs/swagger';
-import { ApiGenericErroDto } from './dtos';
 
 const IS_FORBIDDEN_RESPONSE = 'forbiddenResponse';
 
@@ -24,8 +23,7 @@ export function ForbiddenResponse(options?: ApiResponseOptions) {
     ApiForbiddenResponse({
       ...options,
       description: options?.description ?? FORBIDDEN_MESSAGE,
-      type: ApiGenericErroDto,
     }),
-    ApiOperation({ summary: options?.description }),
+    ApiOperation({ summary: options?.description })
   );
 }

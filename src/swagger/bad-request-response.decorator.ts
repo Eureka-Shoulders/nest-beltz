@@ -2,9 +2,8 @@ import { applyDecorators, SetMetadata } from '@nestjs/common';
 import {
   ApiBadRequestResponse,
   ApiOperation,
-  ApiResponseOptions
+  ApiResponseOptions,
 } from '@nestjs/swagger';
-import { ApiGenericErroDto } from './dtos';
 
 const IS_BAD_REQUEST_RESPONSE = 'badRequestResponse';
 
@@ -25,8 +24,7 @@ export function BadRequestResponse(options?: ApiResponseOptions) {
     ApiBadRequestResponse({
       ...options,
       description: options?.description ?? BAD_REQUEST_MESSAGE,
-      type: ApiGenericErroDto,
     }),
-    ApiOperation({ summary: options?.description }),
+    ApiOperation({ summary: options?.description })
   );
 }
