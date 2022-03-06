@@ -13,7 +13,7 @@
   "types": "./index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "tsc --project ./tsconfig.json --emitDeclarationOnly && cross-env DEBUG=nest-beltz:* node ./scripts/build.js",
+    "build": "node ./scripts/build.js && tsc --project ./tsconfig.json --emitDeclarationOnly",
     "dev": "cross-env DEBUG=nest-beltz:* node ./scripts/dev.js",
     "lint": "tsc --project ./tsconfig.json && eslint src -c .eslintrc.json --ext tsx,ts",
     "prepublish": "npm run build",
