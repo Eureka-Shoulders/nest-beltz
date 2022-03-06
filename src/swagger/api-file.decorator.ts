@@ -2,7 +2,11 @@ import { ApiBody } from '@nestjs/swagger';
 
 export const ApiFile =
   (fileName = 'file', isArray = false): MethodDecorator =>
-  (target: any, propertyKey: string, descriptor: PropertyDescriptor) => {
+  (
+    target: any,
+    propertyKey: string | symbol,
+    descriptor: PropertyDescriptor
+  ) => {
     if (isArray) {
       ApiBody({
         schema: {
