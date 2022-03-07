@@ -1,5 +1,5 @@
 {
-  "name": "nest-beltz",
+  "name": "@euk-labs/nest-beltz",
   "version": "0.1.0",
   "keywords": [
     "eureka",
@@ -15,8 +15,7 @@
   "scripts": {
     "build": "node ./scripts/build.js && tsc --project ./tsconfig.json --emitDeclarationOnly",
     "lint": "tsc --project ./tsconfig.json && eslint src -c .eslintrc.json --ext tsx,ts",
-    "prepublish": "npm run build",
-    "prepare": "husky install"
+    "prepublish": "npm run build"
   },
   "license": "MIT",
   "devDependencies": {
