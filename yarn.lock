@@ -202,6 +202,13 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@euk-labs/beltz@^2.4.2":
+  version "2.4.2"
+  resolved "https://verdaccio.eurekalabs.com.br/@euk-labs%2fbeltz/-/beltz-2.4.2.tgz#af1345423ee5cecac92a140a85aaa963c2d2c1e9"
+  integrity sha512-ZTPDRrUWTOBxp9wyFNcCqsLRlRv3tnmhE6kqgfWkaUP+5/32Q17vPerksUh0S9DtxX7HiMoS9KQZcUXh6mlR6g==
+  dependencies:
+    date-fns "^2.27.0"
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.3"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.9.3.tgz"
@@ -729,6 +736,11 @@ dargs@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/dargs/-/dargs-7.0.0.tgz#04015c41de0bcb69ec84050f3d9be0caf8d6d5cc"
   integrity sha512-2iy1EkLdlBzQGvbweYRFxmFath8+K7+AKB0TlhHWkNuH+TmovaMH/Wp7V7R4u7f4SnX3OgLsU9t1NI9ioDnUpg==
+
+date-fns@^2.27.0:
+  version "2.28.0"
+  resolved "https://verdaccio.eurekalabs.com.br/date-fns/-/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
+  integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
 
 debug@^2.6.9:
   version "2.6.9"

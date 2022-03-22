@@ -1,6 +1,6 @@
 {
   "name": "@euk-labs/nest-beltz",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "keywords": [
     "eureka",
     "utils",
@@ -38,6 +38,7 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
+    "@euk-labs/beltz": "^2.4.2",
     "@nestjs/common": "^8.2.6",
     "@nestjs/swagger": "^5.2.0",
     "class-validator": "^0.13.2",
