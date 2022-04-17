@@ -24,7 +24,7 @@ export function IsValidCNPJOrCPF(
 ): PropertyDecorator {
   return ValidateBy(
     {
-      name: 'isValidCep',
+      name: 'IsValidCNPJOrCPF',
       validator: {
         validate: (value): boolean => validateCNPJOrCPF(value),
         defaultMessage: buildMessage(

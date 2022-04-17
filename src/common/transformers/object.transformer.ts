@@ -5,7 +5,7 @@ interface Logger {
   error(...args: any[]): void
 }
 
-export default function TransformObject(logger: Logger) {
+export function TransformObject(logger: Logger) {
   return Transform((param: TransformFnParams) => {
     try {
       if (Array.isArray(param.value)) {
